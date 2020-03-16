@@ -39,7 +39,11 @@ class MainActivity : AppCompatActivity() {
     //функуиональность активити
     private fun initFunc() {
         setSupportActionBar(mToolbar)
+        // меняем пустую активность на фрагмент чата
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.dataContainer, ChatsFragment()).commit()
         createHeader()
+        // рисуем меню
         createDrawer()
     }
 
@@ -87,12 +91,12 @@ class MainActivity : AppCompatActivity() {
                     .withSelectable(false)
                     .withIcon(R.drawable.ic_menu_settings),
                 DividerDrawerItem(),
-                PrimaryDrawerItem().withIdentifier(108)
+                PrimaryDrawerItem().withIdentifier(107)
                     .withIconTintingEnabled(true)
                     .withName("Пригласить друзей")
                     .withSelectable(false)
                     .withIcon(R.drawable.ic_menu_invate),
-                PrimaryDrawerItem().withIdentifier(109)
+                PrimaryDrawerItem().withIdentifier(108)
                     .withIconTintingEnabled(true)
                     .withName("Вопросы о телеграм")
                     .withSelectable(false)
@@ -105,7 +109,14 @@ class MainActivity : AppCompatActivity() {
                         position: Int,
                         drawerItem: IDrawerItem<*>
                     ): Boolean {
-                        Toast.makeText(applicationContext, position.toString(), Toast.LENGTH_SHORT).show()
+                        when(position){
+                            7->supportFragmentManager
+                                .beginTransaction()
+                                .addToBackStack(null)
+                                .replace(R.id.dataContainer,SettingsFragment()).commit()
+                        }
+                        Toast.makeText(applicationContext, position.toString(), Toast.LENGTH_SHORT)
+                            .show()
                         return false
                     }
                 }
