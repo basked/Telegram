@@ -48,5 +48,5 @@ dependencies {
     implementation "com.mikepenz:materialdrawer-nav:7.0.0"
     /*END Material drawler*/
 
-
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
 }

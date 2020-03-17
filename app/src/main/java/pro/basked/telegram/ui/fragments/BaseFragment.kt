@@ -1,4 +1,4 @@
-package pro.basked.telegram.fragments
+package pro.basked.telegram.ui.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
