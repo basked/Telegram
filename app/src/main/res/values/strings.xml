@@ -7,4 +7,11 @@
     <string name="settings_text">Настройки</string>
     <string name="settings_default_username">basked</string>
     <string name="settings_default_status">в сети</string>
+    <string name="settings_text_account">Аккаунт</string>
+    <string name="settings_default_number">+375 29 8210344</string>
+    <string name="settings_label_phone_number">Нажмите чтобы изменить номер Телефона</string>
+    <string name="settings_default_login">Dzmitry Misiulia</string>
+    <string name="settings_label_login">Имя пользователя</string>
+    <string name="settings_default_bio">О себе</string>
+    <string name="settings_label_bio">Напишите немного о себе</string>
 </resources>
