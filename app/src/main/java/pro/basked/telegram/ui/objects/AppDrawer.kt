@@ -1,4 +1,4 @@
-package pro.basked.telegram.objects
+package pro.basked.telegram.ui.objects
 
 import android.view.View
 import android.widget.Toast

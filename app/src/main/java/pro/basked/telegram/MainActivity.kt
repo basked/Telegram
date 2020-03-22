@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.widget.Toolbar
 import pro.basked.telegram.databinding.ActivityMainBinding
 import pro.basked.telegram.ui.fragments.ChatsFragment
-import pro.basked.telegram.objects.AppDrawer
+import pro.basked.telegram.ui.objects.AppDrawer
 
 class MainActivity : AppCompatActivity() {
     //mBinding where m -member (член класса)
